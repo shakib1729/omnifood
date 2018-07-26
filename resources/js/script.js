@@ -86,6 +86,18 @@ $('a[href*="#"]')
     	offset: '50%'
     });
 
+      $('.js--wp-5').waypoint(direction => {
+      $('.js--wp-5').addClass('animated fadeInLeft');
+    },{
+      offset: '50%'
+    });
+
+       $('.js--wp-6').waypoint(direction => {
+      $('.js--wp-6').addClass('animated fadeInUp');
+    },{
+      offset: '50%'
+    });
+
      // Mobile Navigation
      $('.js--nav-icon').click(()=>{    // when we click on '.js--nav-icon' then add open and close effect on '.js--main-nav'
      	const nav = $('.js--main-nav');
@@ -101,5 +113,22 @@ $('a[href*="#"]')
      ;
 
      });
+
+     // Maps
+ const map = new GMaps({
+  div: '.map',
+  lat: 28.6334119,
+  lng: 77.206713,
+  zoom: 16
+});
+
+  map.addMarker({
+  lat: 28.6337695,
+  lng: 77.2031403,
+  title: 'Gole Market',
+  infoWindow: {
+  content: '<p>Our Delhi HQ</p>'
+    }
+});
 
 });

@@ -10,7 +10,7 @@
 }
 
 
-/* small tablets to big tablets : 768pc(iPad) to 1023px*/
+/* small tablets to big tablets : 768px(iPad) to 1023px*/
 @media only screen and (max-width: 1023px){
     body{ font-size: 18px; }
     section { padding: 60px 0; }
@@ -37,7 +37,9 @@
      }
      .plan-price{font-size: 250%;}
 
-     .contact-form{width: 80%;}
+     .contact-form{width: 90%;}
+
+
 }
 
 /*Small Phones to small tablets : 481px to 767px*/
@@ -104,6 +106,26 @@
      .works-step:last-of-type{ margin-bottom: 20px; }
 
      .app-screen{ width: 40%; }
+
+     .map-box{
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+
+        .map{
+            width: 100%;
+            height: 300px;
+            position: relative;
+            z-index: 0;
+        }
+
+        .form-box{
+            position: relative;
+            height: auto;
+            width: 100%;
+            padding: 30px 0;
+        }
 
 }
 
